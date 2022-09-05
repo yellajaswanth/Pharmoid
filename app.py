@@ -1,11 +1,14 @@
-import flask
+from flask import Flask, render_template
 
-app = flask.Flask(__name__)
+
+app = Flask(__name__)
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return '<h1>Hello Pharmoid</h1>'
+    return render_template("index.html")
+
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
     
+    app.run(host='0.0.0.0', debug=True)
