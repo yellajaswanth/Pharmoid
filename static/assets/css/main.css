@@ -1,8 +1,15 @@
+.search-bar{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
 #cy {
     height: 450px;
     width: 100%;
     /* position: absolute; */
     /* left: 0;
     top: 0; */
-    background-color: rgb(249, 87, 87);
+    /* background-color: rgb(249, 87, 87); */
   }
